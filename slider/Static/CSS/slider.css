@@ -1,0 +1,46 @@
+﻿/* Контейнер слайдера */
+.slider-container {
+    position: relative;
+    width: 80%; /* Уменьшаем контейнер слайдера */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Стиль для слайдов */
+.slide {
+    display: none; /* Скрываем все слайды по умолчанию */
+    text-align: center;
+}
+
+    /* Изображения внутри слайдов */
+    .slide img {
+        width: 100%; /* Это растягивает изображение на весь контейнер */
+        max-width: 600px; /* Устанавливаем максимальную ширину для изображения */
+        height: auto; /* Сохраняем пропорции изображения */
+        border-radius: 8px; /* Скругление углов */
+    }
+
+    /* Отображение только активного слайда */
+    .slide.active {
+        display: block;
+    }
+
+/* Стиль для кнопок навигации */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
